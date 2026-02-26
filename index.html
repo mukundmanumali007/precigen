@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precigen Learning Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="Precigen home">
+          <span class="brand-logo">P</span>
+          <span class="brand-text">Precigen</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary">
+          <a href="#programs">Programs</a>
+          <a href="#syllabus">Syllabus</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions desktop-cta">
+          <a class="btn btn-ghost" href="#contact">Apply Internship</a>
+          <a class="btn btn-primary" href="#contact">Get Consultation</a>
+        </div>
+
+        <button
+          class="hamburger"
+          id="menuToggle"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          aria-label="Open navigation menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="mobile-drawer" id="mobileMenu" aria-hidden="true">
+      <div class="drawer-header">
+        <p>Menu</p>
+        <button id="menuClose" aria-label="Close menu">✕</button>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile">
+        <a href="#programs">Programs</a>
+        <a href="#syllabus">Syllabus</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="drawer-actions">
+        <a class="btn btn-ghost" href="#contact">Apply Internship</a>
+        <a class="btn btn-primary" href="#contact">Get Consultation</a>
+      </div>
+    </aside>
+    <div class="drawer-overlay" id="drawerOverlay" hidden></div>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Upskill with Industry-Ready AI & Product Programs</h1>
+          <p>
+            Build practical experience through guided projects, expert mentorship,
+            and internship pathways designed for modern tech careers.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="programs">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Featured Programs</h2>
+            <p>Pick a specialization and start building your portfolio today.</p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>AI Engineering Bootcamp</h3>
+              <p>Hands-on workflows for prompt engineering, RAG systems, and deployment.</p>
+            </article>
+            <article class="card">
+              <h3>Product Management Sprint</h3>
+              <p>Learn roadmapping, user research, and metrics from real product case studies.</p>
+            </article>
+            <article class="card">
+              <h3>Full Stack Internship Prep</h3>
+              <p>Sharpen frontend + backend fundamentals and ace technical interviews.</p>
+            </article>
+            <article class="card">
+              <h3>Data Analytics Accelerator</h3>
+              <p>Master dashboards, SQL insights, and storytelling for business decisions.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="syllabus">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Syllabus Blocks</h2>
+            <p>Structured modules for progressive learning outcomes.</p>
+          </div>
+          <div class="syllabus-grid">
+            <article class="syllabus-block">
+              <h3>Foundation</h3>
+              <ul>
+                <li>Core concepts and tooling</li>
+                <li>Workflow setup and collaboration</li>
+                <li>Mini-practical assignments</li>
+              </ul>
+            </article>
+            <article class="syllabus-block">
+              <h3>Application</h3>
+              <ul>
+                <li>Guided real-world projects</li>
+                <li>Feedback loops and iteration</li>
+                <li>Peer review checkpoints</li>
+              </ul>
+            </article>
+            <article class="syllabus-block">
+              <h3>Career Launch</h3>
+              <ul>
+                <li>Portfolio and resume optimization</li>
+                <li>Mock interview simulations</li>
+                <li>Internship application support</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band" id="contact">
+        <div class="container cta-band-inner">
+          <div>
+            <h2>Ready to start?</h2>
+            <p>
+              Speak to our advisors to choose the right track and build a personalized study plan.
+            </p>
+          </div>
+          <a href="#inquiryForm" class="btn btn-light">Request a Callback</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <h2>Inquiry Form</h2>
+            <p>
+              Share your details and interests. Our team will connect with next steps and schedule options.
+            </p>
+          </div>
+          <form id="inquiryForm" class="inquiry-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" placeholder="+1 (555) 123-4567" required />
+            </label>
+            <label>
+              Interest Area
+              <select name="interest" required>
+                <option value="">Select one</option>
+                <option>AI Engineering</option>
+                <option>Product Management</option>
+                <option>Full Stack Internship</option>
+                <option>Data Analytics</option>
+              </select>
+            </label>
+            <label class="full-width">
+              Message
+              <textarea name="message" rows="4" placeholder="Tell us about your goals"></textarea>
+            </label>
+            <button class="btn btn-primary full-width" type="submit">Submit Inquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div class="quick-actions" aria-label="Quick contact actions">
+      <a href="tel:+15551234567" class="quick-btn call">Call</a>
+      <a href="https://wa.me/15551234567" class="quick-btn whatsapp" target="_blank" rel="noreferrer">WhatsApp</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
