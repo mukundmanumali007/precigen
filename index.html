@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precigen Tech | Home</title>
+    <style>
+      :root {
+        --primary: #0f4c81;
+        --accent: #00a7b5;
+        --text: #1f2937;
+        --muted: #4b5563;
+        --bg: #f3f6fb;
+        --card: #ffffff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        line-height: 1.6;
+        background: var(--bg);
+      }
+      main,
+      footer {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+      section {
+        background: var(--card);
+        margin: 1rem 0;
+        padding: 1.25rem;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(15, 76, 129, 0.08);
+      }
+      h1,
+      h2,
+      h3 {
+        color: var(--primary);
+        margin-top: 0;
+      }
+      ul {
+        padding-left: 1.2rem;
+      }
+      .hero {
+        background: linear-gradient(135deg, #0f4c81, #00a7b5);
+        color: #fff;
+      }
+      .hero h1,
+      .hero h2,
+      .hero p {
+        color: #fff;
+      }
+      .grid {
+        display: grid;
+        gap: 1rem;
+      }
+      @media (min-width: 800px) {
+        .grid.two {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .track {
+        border: 1px solid #dbe4f0;
+        border-radius: 8px;
+        padding: 0.9rem;
+      }
+      .contact-list li {
+        list-style: none;
+        margin: 0.25rem 0;
+      }
+      footer {
+        text-align: center;
+        color: var(--muted);
+        padding: 1.5rem 1rem 2rem;
+      }
+      a {
+        color: var(--primary);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <h1 id="hero-heading">Precigen Tech</h1>
+        <h2>Building future-ready teams through practical technology learning and business solutions.</h2>
+        <p>
+          We combine enterprise services with industry-focused training to help organizations and learners grow faster,
+          smarter, and with measurable outcomes.
+        </p>
+      </section>
+
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About Us</h2>
+        <article>
+          <p>
+            Precigen Tech is a technology and talent-development company focused on ERP and CRM enablement, custom
+            software delivery, and career acceleration programs. We bridge the gap between classroom knowledge and
+            real-world execution through guided projects, mentorship, and domain-specific learning pathways.
+          </p>
+        </article>
+      </section>
+
+      <section aria-labelledby="services-heading">
+        <h2 id="services-heading">Services</h2>
+        <article>
+          <ul>
+            <li>ERP implementation and support</li>
+            <li>CRM setup, customization, and workflow automation</li>
+            <li>Custom software development for web and enterprise use cases</li>
+            <li>Technology consulting for process optimization and digital transformation</li>
+            <li>Industry-oriented training programs, internships, and mentorship</li>
+          </ul>
+        </article>
+      </section>
+
+      <section aria-labelledby="internship-domains-heading">
+        <h2 id="internship-domains-heading">Internship &amp; Project Domains</h2>
+        <article>
+          <ul>
+            <li>Java development projects</li>
+            <li>AI/ML model-building and deployment tasks</li>
+            <li>Data Science analytics and dashboarding assignments</li>
+            <li>Business Analyst documentation and process mapping projects</li>
+            <li>Software Testing projects (Manual and Automation)</li>
+          </ul>
+        </article>
+      </section>
+
+      <section aria-labelledby="tracks-heading">
+        <h2 id="tracks-heading">Detailed Tracks</h2>
+        <div class="grid two">
+          <article class="track" aria-labelledby="java-track-heading">
+            <h3 id="java-track-heading">Java</h3>
+            <ul>
+              <li>Core Java: OOP, collections, exception handling</li>
+              <li>Advanced Java: JDBC, servlets, and REST fundamentals</li>
+              <li>Spring Boot application development and API creation</li>
+              <li>Mini and capstone projects with deployment basics</li>
+            </ul>
+          </article>
+
+          <article class="track" aria-labelledby="aiml-track-heading">
+            <h3 id="aiml-track-heading">AI/ML</h3>
+            <ul>
+              <li>Python for AI and machine learning workflows</li>
+              <li>Supervised and unsupervised learning techniques</li>
+              <li>Model training, evaluation, and tuning</li>
+              <li>Intro to deployment and real-world AI use cases</li>
+            </ul>
+          </article>
+
+          <article class="track" aria-labelledby="datascience-track-heading">
+            <h3 id="datascience-track-heading">Data Science</h3>
+            <ul>
+              <li>Data cleaning, transformation, and exploratory analysis</li>
+              <li>Statistics for decision-making</li>
+              <li>Visualization using modern BI and Python tools</li>
+              <li>Business insights through end-to-end case studies</li>
+            </ul>
+          </article>
+
+          <article class="track" aria-labelledby="ba-track-heading">
+            <h3 id="ba-track-heading">Business Analyst</h3>
+            <ul>
+              <li>Requirement gathering and stakeholder communication</li>
+              <li>BRD/FRD preparation and user story writing</li>
+              <li>Process mapping, gap analysis, and solution proposals</li>
+              <li>Agile collaboration and documentation standards</li>
+            </ul>
+          </article>
+
+          <article class="track" aria-labelledby="testing-track-heading">
+            <h3 id="testing-track-heading">Testing (Manual + Automation)</h3>
+            <ul>
+              <li>Software testing lifecycle and defect management</li>
+              <li>Manual test case design and execution practices</li>
+              <li>Automation foundations with Selenium and test frameworks</li>
+              <li>API testing basics and reporting workflows</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="why-choose-heading">
+        <h2 id="why-choose-heading">Why Choose Precigen</h2>
+        <article>
+          <ul>
+            <li>Hands-on, project-first learning aligned with industry demands</li>
+            <li>Mentorship from experienced professionals</li>
+            <li>Integrated approach: services expertise + training outcomes</li>
+            <li>Portfolio-ready deliverables and practical exposure</li>
+            <li>Career-focused guidance with domain specialization</li>
+          </ul>
+        </article>
+      </section>
+
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <article>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:info@precigentech.com">info@precigentech.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+910000000000">+91 00000 00000</a></li>
+            <li><strong>Website:</strong> <a href="https://www.precigentech.com">www.precigentech.com</a></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Precigen Tech. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
